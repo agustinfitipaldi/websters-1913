@@ -8,11 +8,7 @@ Here is cmod's original work:
 <img width="991" alt="Screenshot 2025-06-29 at 17 48 08" src="https://github.com/user-attachments/assets/5ce863d2-4080-49be-bb76-9bec98d1b3ce" />
 
 Here is the progress so far:
-<img width="993" alt="Screenshot 2025-06-29 at 18 07 50" src="https://github.com/user-attachments/assets/db42b4df-76a9-472a-b782-c96662921e2b" />
-
-And eventually I want to adjust the the indentation and vertical spacing so that it looks closer to this:
-<img width="993" alt="Screenshot 2025-06-29 at 18 17 07" src="https://github.com/user-attachments/assets/a4f32200-6579-4dc1-abc3-da65d2d514ce" />
-
+<img width="993" alt="Screenshot 2025-06-29 at 18 46 58" src="https://github.com/user-attachments/assets/6ccb5057-377c-49ee-a0d6-de321052e1dd" />
 
 ## Installation
 
