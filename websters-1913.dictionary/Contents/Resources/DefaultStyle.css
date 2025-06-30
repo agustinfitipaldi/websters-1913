@@ -6,7 +6,7 @@
 /*=====================================*/
 
 body {
-	line-height: 1.5em;
+	line-height: 1.6em;
 	padding-top: 2em;
 	padding-bottom: 3em;
 	padding-left: 1em;
@@ -59,8 +59,10 @@ html {
 .cd {
 	font-size: 1em;
 	display: block;
-	margin-left: 3em;
-	margin-right: 3em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	margin-bottom: 0.8em;
+	line-height: 1.4;
 }
 
 /*=====================================*/
@@ -68,12 +70,14 @@ html {
 /*=====================================*/
 
 .q {
-	font-size: 1em;
-	line-height: 1.3;
-	margin: 1.5em 3em 1.5em 3em;
+	font-size: 0.95em;
+	line-height: 1.4;
+	margin: 1.2em 2em 1.2em 2em;
 	display: block;
 	color: -apple-system-secondary-label;
 	font-style: italic;
+	padding-left: 1em;
+	border-left: 2px solid -apple-system-quaternary-label;
 }
 
 .rj {
@@ -127,13 +131,28 @@ html {
 }
 
 /*=====================================*/
-/* Sense Numbers                      */
+/* Sense Numbers & Definition Hierarchy */
 /*=====================================*/
 
 .sn {
 	font-weight: 600;
 	color: -apple-system-secondary-label;
 	font-family: system-ui;
+	margin-right: 0.3em;
+}
+
+/* Definition indentation hierarchy - see .cd above */
+
+/* Sub-definitions with progressive indentation */
+.sd {
+	margin-left: 2em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+/* Enhanced spacing for definition groups */
+.sn + * {
+	margin-top: 0.2em;
 }
 
 /*=====================================*/
@@ -191,8 +210,10 @@ html.apple_client-panel .hw {
 }
 
 html.apple_client-panel .q {
-	margin: 0.7em 2em 0.7em 2em;
+	margin: 0.6em 1.5em 0.6em 1.5em;
 	font-size: 0.9em;
+	padding-left: 0.8em;
+	border-left: 2px solid -apple-system-quaternary-label;
 }
 
 html.apple_client-panel a,
@@ -216,6 +237,57 @@ a:hover {
 }
 
 /*=====================================*/
+/* Hand Symbol & Special Note Boxes */
+/*=====================================*/
+
+/* Apple-style boxes for special content */
+.note,
+.hand-symbol {
+	display: block;
+	background-color: Canvas;
+	border: solid 1px -apple-system-tertiary-label;
+	border-radius: 0.8em;
+	padding: 0.7em 1em;
+	margin: 0.8em 0em 0.8em 0em;
+	line-height: 1.4;
+}
+
+/* Enhanced styling for special content boxes */
+.note {
+	font-size: 0.95em;
+	color: CanvasText;
+}
+
+/* Box styling for panel mode */
+html.apple_client-panel .note,
+html.apple_client-panel .hand-symbol {
+	margin: 0.5em 0em;
+	padding: 0.5em 0.8em;
+	border-radius: 0.6em;
+}
+
+/*=====================================*/
+/* Enhanced Typography               */
+/*=====================================*/
+
+/* Better spacing for numbered definitions */
+.sn + .cd,
+.sn + .sd {
+	margin-top: 0.3em;
+}
+
+/* Improved sub-definition spacing */
+.sd + .sd {
+	margin-top: 0.5em;
+}
+
+/* Better spacing around italic content */
+.it, .ex, .pos {
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+}
+
+/*=====================================*/
 /* Dark Mode Support                 */
 /*=====================================*/
 
@@ -225,5 +297,18 @@ a:hover {
 	}
 	img {
 		filter: invert(100%);
+	}
+	
+	/* Enhanced dark mode for boxes */
+	.note,
+	.hand-symbol {
+		background-color: -apple-system-control-background;
+		border-color: -apple-system-separator;
+	}
+	
+	/* Subtle quote border in dark mode */
+	.q,
+	html.apple_client-panel .q {
+		border-left-color: -apple-system-separator;
 	}
 }
