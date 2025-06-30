@@ -240,30 +240,21 @@ a:hover {
 /* Hand Symbol & Special Note Boxes */
 /*=====================================*/
 
-/* Apple-style boxes for special content */
+/* Simple styling for special content */
 .note,
 .hand-symbol {
 	display: block;
-	background-color: Canvas;
-	border: solid 1px -apple-system-tertiary-label;
-	border-radius: 0.8em;
-	padding: 0.7em 1em;
-	margin: 0.8em 0em 0.8em 0em;
+	margin: 0.8em 0em 0.8em 1.5em;
+	font-size: 0.95em;
 	line-height: 1.4;
 }
 
-/* Enhanced styling for special content boxes */
-.note {
-	font-size: 0.95em;
-	color: CanvasText;
-}
+/* Note: .note styling now handled in main rule above */
 
-/* Box styling for panel mode */
+/* Panel mode adjustments */
 html.apple_client-panel .note,
 html.apple_client-panel .hand-symbol {
-	margin: 0.5em 0em;
-	padding: 0.5em 0.8em;
-	border-radius: 0.6em;
+	margin: 0.5em 0em 0.5em 1em;
 }
 
 /*=====================================*/
@@ -299,11 +290,10 @@ html.apple_client-panel .hand-symbol {
 		filter: invert(100%);
 	}
 	
-	/* Enhanced dark mode for boxes */
+	/* Dark mode adjustments for special content */
 	.note,
 	.hand-symbol {
-		background-color: -apple-system-control-background;
-		border-color: -apple-system-separator;
+		/* No special dark mode styling needed */
 	}
 	
 	/* Subtle quote border in dark mode */
