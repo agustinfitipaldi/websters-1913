@@ -1,23 +1,24 @@
 # Webster's 1913 Dictionary for macOS
 
-A contemporary-update to the CSS styling of dictionary results for the Webster's 1913 English Dictionary.
+A work in progress update of the Webster's 1913 Dictionary for macOS using Claude Code
 
-This is by no means a "perfect" styling but it feels much more aligned with the rest of the dictionary than previous stylings. It's just CSS — please fork this sucker and make it even prettier using mystical CSS selectors.
+## Progress
+
+Here is cmod's original work:
+<img width="991" alt="Screenshot 2025-06-29 at 17 48 08" src="https://github.com/user-attachments/assets/5ce863d2-4080-49be-bb76-9bec98d1b3ce" />
+
+Here is the progress so far:
+<img width="993" alt="Screenshot 2025-06-29 at 18 07 50" src="https://github.com/user-attachments/assets/db42b4df-76a9-472a-b782-c96662921e2b" />
+
+And eventually I want to adjust the the indentation and vertical spacing so that it looks closer to this:
+<img width="993" alt="Screenshot 2025-06-29 at 18 17 07" src="https://github.com/user-attachments/assets/a4f32200-6579-4dc1-abc3-da65d2d514ce" />
+
 
 ## Installation
 
-To install on macOS: 
-
-- Download and unzip the [`websters-1913.dictionary.zip`](https://github.com/cmod/websters-1913/raw/main/websters-1913.dictionary.zip) file (by double clicking it)
-- Open `Dictionary.app`
-- File > Open Dictionaries Folder
-- Copy the unzipped `webster-1913.dictionary` file into the dictionaries folder (default location: `~/Library/Dictionaries`)
-- Quit and re-open `Dictionary.app`
-- Dictionary > Preferences
-- Webster's 1913 should be at the bottom of your sources list
-- Select it!
-
-![screenshot of results for "Monkey"](https://github.com/cmod/websters-1913/raw/main/screenshots/example.jpg)
+- download the .dictionary folder
+- place it in your dictionaries folder (accessed through Dictionary app)
+- restart Dictionary app
 
 ## Background
 
@@ -25,4 +26,4 @@ Dictionary madness kicked off by [James Somers back in 2014](https://jsomers.net
 
 > A book where you can enter “sport” and end up with “a diversion of the field” — this is in fact the opposite of what I’d known a dictionary to be. This is a book that transmutes plain words into language that’s finer and more vivid and sometimes more rare. No wonder McPhee wrote with it by his side. No wonder he looked up words he knew, versus words he didn’t, in a ratio of “at least ninety-nine to one.”
 
-Based off the output of [@ponychicken's parsing](https://github.com/ponychicken/WebsterParser) of the original dictionary files. 
+Based off the output of [@ponychicken's parsing](https://github.com/ponychicken/WebsterParser) of the original dictionary files.
